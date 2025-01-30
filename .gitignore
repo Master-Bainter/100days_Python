@@ -1,0 +1,8 @@
+#Ignore python bytecode files
+.idea/
+
+#Ignore logs
+*.log
+
+#ignore the virtual env folder
+venv/
