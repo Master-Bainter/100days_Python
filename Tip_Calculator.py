@@ -18,3 +18,4 @@ total = (bill + bill * tip) / num_people
 total = round(total,2)
 print(f"Each person should pay: ${total:.2f}")
 #print("$" + str(bill))
+#test
