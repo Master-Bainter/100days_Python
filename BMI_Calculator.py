@@ -6,4 +6,4 @@ kg = 0.453
 height_m = 0.0254
 bmi = (weight * kg / ((height*height_m)**2))
 
-print(bmi)
+print(round(bmi, 2))
