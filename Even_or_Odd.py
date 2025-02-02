@@ -1,3 +1,5 @@
+#Code below this line
+
 number = int(input("Please input a number: "))
 even_odd = number % 2
 
