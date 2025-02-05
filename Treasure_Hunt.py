@@ -34,23 +34,27 @@ direction = input("You come to an intersection, do you want to go Left or Right?
 travel = ""
 door = ""
 
-if direction == "right":
-    print("Game Over!")
-    exit()
-else:
+if direction == "left":
     travel = input("You come to a lake, with an Island in the middle, do you want to swim or wait for a boat (swim or wait) ").lower()
-    if travel == "swim":
-        print("Game Over!")
-        exit()
-    else:
+    if travel == "wait":
         door = input("You come to 3 doors, Red, Yellow, and Blue. Which one do you want to open? ").lower()
         while door != "red" or "yellow" or "blue":
-            door = input("You made a wrong selection, try again!")
+            door = input("You made a wrong selection, try again!").lower
             if door == "yellow":
                 print("You Win!")
-                exit()
+                break
+                #exit()
             else:
                 print("Game Over")
+                exit()
+    else:
+        print("Game Over!")
+        exit()
+else:
+    print("Game Over!")
+    exit()
+
+
         #if door == "yellow":
          #   print("You Win!")
         #else:
