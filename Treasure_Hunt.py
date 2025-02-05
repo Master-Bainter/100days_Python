@@ -1,6 +1,6 @@
 #Code below this line
 
-print('''
+print(r'''
   ____________________________________________________________________
  / \-----     ---------  -----------     -------------- ------    ----\/
  \_/__________________________________________________________________/
@@ -38,8 +38,8 @@ if direction == "left":
     travel = input("You come to a lake, with an Island in the middle, do you want to swim or wait for a boat (swim or wait) ").lower()
     if travel == "wait":
         door = input("You come to 3 doors, Red, Yellow, and Blue. Which one do you want to open? ").lower()
-        while door != "red" or "yellow" or "blue":
-            door = input("You made a wrong selection, try again!").lower
+        while door not in ["red", "yellow", "blue"]:
+            door = input("You made a wrong selection, try again! ").lower()
             if door == "yellow":
                 print("You Win!")
                 break
