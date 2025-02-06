@@ -50,9 +50,3 @@ if direction == "left":
         print("Game Over!")
 else:
     print("Game Over!")
-
-
-        #if door == "yellow":
-         #   print("You Win!")
-        #else:
-         #   print("Game Over!")
