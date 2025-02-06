@@ -31,20 +31,17 @@ print(r'''
 print("Welcome to Treasure Island!")
 
 direction = input("You come to an intersection, do you want to go Left or Right? ").lower()
-travel = ""
-door = ""
 
 while direction not in ["left", "right"]:
-    direction = input("You have to go left or right: ")
+    direction = input("Invalid choice, you have to go left or right: ")
 if direction == "left":
-    travel = input(
-        "You come to a lake, with an Island in the middle, do you want to swim or wait for a boat (swim or wait) ").lower()
+    travel = input("You come to a lake, with an Island in the middle, do you want to swim or wait for a boat (swim or wait) ").lower()
     while travel not in ["swim", "wait"]:
-        travel = input("You have to swim or wait for a boat! ")
+        travel = input("Invalid choice, you have to select swim or wait! ")
     if travel == "wait":
         door = input("You come to 3 doors, Red, Yellow, and Blue. Which one do you want to open? ").lower()
         while door not in ["red", "yellow", "blue"]:
-            door = input("You made a wrong selection, try again! ").lower()
+            door = input("You have to select red, yellow, or blue! ").lower()
         if door == "yellow":
             print("You Win!")
         else:
