@@ -1,3 +1,7 @@
 # Code below this line
+import random
 
-print("Number of letters in your name: " + len(int(input("Enter your name"))))
+states = ['Alabama', 'Arkansas', 'Conneticut']
+
+print(states)
+
