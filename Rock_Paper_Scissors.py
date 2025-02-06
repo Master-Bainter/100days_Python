@@ -1,6 +1,16 @@
 #Code below this line
 import random
-player_1 = int(input("Please select 0 for Rock, 1 for Scissors, or 2 for Paper: "))
+
+print("""
+**************************
+*                        *
+*    0 - Rock            *
+*    1 - Scissors        *
+*    2 - Paper           *
+*                        *
+**************************                
+""")
+player_1 = int(input("Please select make a selection: "))
 
 # Rock paper scissor vars
 rock = ("""
