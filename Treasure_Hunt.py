@@ -40,19 +40,14 @@ if direction == "left":
         door = input("You come to 3 doors, Red, Yellow, and Blue. Which one do you want to open? ").lower()
         while door not in ["red", "yellow", "blue"]:
             door = input("You made a wrong selection, try again! ").lower()
-            if door == "yellow":
-                print("You Win!")
-                break
-                #exit()
-            else:
-                print("Game Over")
-                exit()
+        if door == "yellow":
+            print("You Win!")
+        else:
+            print("Game Over")
     else:
         print("Game Over!")
-        exit()
 else:
     print("Game Over!")
-    exit()
 
 
         #if door == "yellow":
