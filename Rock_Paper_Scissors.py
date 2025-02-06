@@ -32,6 +32,7 @@ scissors_________)
 choices = [rock, paper, scissors]
 computer_choice = random.choice(choices)
 
+#game code
 if player_1 == 0:
     print("You")
     print(choices[0])
@@ -65,7 +66,3 @@ else:
         print("It's a Draw!")
     else:
         print("You Win!")
-
-
-
-
