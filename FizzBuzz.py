@@ -2,7 +2,11 @@
 num = 0
 
 for number in range(1, 101):
-    num += number
-    if num % 3 == 0:
+    if number % 3 == 0:
         print("Fizz")
-    print(num)
+    else:
+        print(number)
+    if number % 5 == 0:
+        print("Buzz")
+    else:
+        print(number)
