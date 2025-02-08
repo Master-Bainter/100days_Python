@@ -10,7 +10,7 @@ print("""
 *                        *
 **************************                
 """)
-player_1 = int(input("Please select make a selection: "))
+player_1 = int(input("Please1 make a selection: "))
 
 # Rock paper scissor vars
 rock = ("""
