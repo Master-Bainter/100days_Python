@@ -1,10 +1,7 @@
 # Code below this line
-import random
+import Max_Function
 
-sum = 0
 
-for number in range(1, 101):
-    sum += number
-print(sum)
+print(Max_Function)
 
 

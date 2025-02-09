@@ -1,4 +1,4 @@
-student_scores = [250, 124, 165, 150, 189, 200, 146]
+student_scores = [250, 124, 165, 300, 189, 200, 146]
 largest_score = 0
 index = 0
 
