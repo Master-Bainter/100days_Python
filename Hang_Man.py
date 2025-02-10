@@ -1,12 +1,13 @@
 import random
-
+from word_list import word_list
+from hangman_ascii_art import stages
 #Allows other player to choose word to use in the game
 #Need to be carefull because word is visible to player, need to somehow mask the word
 #word = input("Choose a word for the player to guess: ")
 
 #Comment out the two lines below this and create your own random list. Need to update "word" with "word_list"
 #throughout the code
-word_list = ['boogers', 'chess', 'burger', 'headset', 'cheesecake', 'kickstart', 'desktop', 'mechanical']
+#word_list = ['boogers', 'chess', 'burger', 'headset', 'cheesecake', 'kickstart', 'desktop', 'mechanical']
 word_choice = random.choice(word_list)
 
 word_len = len(word_choice)
@@ -18,63 +19,7 @@ wrong_letters = []
 
 #hangman stages of the game: stages is in reverse, meaning index 6 is the first display to see this
 #run a print(stages[6]).
-stages = [r'''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=======
-''', r'''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=======
-''', r'''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=======
-''', r'''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=======
-''', r'''
-  +---+
-  |   |
-  O   |
- /    |
-      |
-      |
-=======
-''', r'''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=======
-''', r'''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=======
-''']
+
 
 for position in range(word_len):
     placeholder += "_"
