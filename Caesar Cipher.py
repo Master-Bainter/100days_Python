@@ -13,14 +13,29 @@ def encrypt(original_text = text, shift_amount = shift):
         position = letters.index(char) + shift_amount
         position %= len(letters)
         encrypted_text += letters[position]
-
-    print(f"Your encrypted text is: {encrypted_text}")
-
-
-
-        #print(letters.index(char))
-        #print(letters.index(char) + shift_amount)
-        #print(char)
+    return encrypted_text
+    #print(f"Your encrypted text is: {encrypted_text}")
 
 
-encrypt(text, shift)
+def decrypt(original_text = text, shift_amount = shift):
+    decrypted_text = "".lower()
+    for char in encrypt():
+        position = letters.index(char) - shift_amount
+        position %= len(letters)
+        decrypted_text += letters[position]
+    return decrypted_text
+    #print(decrypted_text)
+
+def caesar(choice = direction):
+    if choice == "encode":
+        return f"Your encrypted text is {encrypt()}"
+    elif choice == "decode":
+        return f"Your decrypted text is {decrypt()}"
+    else:
+        print("Your choiice was invalid")
+
+
+print(caesar())
+#print(f"Your encrypted text is {encrypt()}")
+#print(f"Your decrypted text is {decrypt()}")
+
