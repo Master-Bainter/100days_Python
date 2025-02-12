@@ -36,8 +36,8 @@ def caesar(choice = direction):
 
 
 print(caesar())
-# print(encrypt())
-# print(decrypt())
+print(encrypt())
+print(decrypt())
 #print(f"Your encrypted text is {encrypt()}")
 #print(f"Your decrypted text is {decrypt()}")
 
