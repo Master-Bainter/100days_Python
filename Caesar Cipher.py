@@ -7,8 +7,8 @@ text = input("Type your message: ").lower()
 shift = int(input("Type the shift number: "))
 
 
-def encrypt(original_text = text, shift_amount = shift):
-    encrypted_text = "".lower()
+def encrypt(original_text, shift_amount):
+    encrypted_text = ""
     for char in original_text:
         position = letters.index(char) + shift_amount
         position %= len(letters)
@@ -17,8 +17,8 @@ def encrypt(original_text = text, shift_amount = shift):
     #print(f"Your encrypted text is: {encrypted_text}")
 
 
-def decrypt(original_text = text, shift_amount = shift):
-    decrypted_text = "".lower()
+def decrypt(original_text, shift_amount):
+    decrypted_text = ""
     for char in original_text:
         position = letters.index(char) - shift_amount
         position %= len(letters)
@@ -26,18 +26,19 @@ def decrypt(original_text = text, shift_amount = shift):
     return decrypted_text
     #print(decrypted_text)
 
-def caesar(choice = direction):
+def caesar(choice, original_text, shift_amount):
     if choice == "encode":
-        return f"Your encrypted text is {encrypt()}"
+        return f"Your encrypted text is {encrypt(original_text, shift_amount)}"
     elif choice == "decode":
-        return f"Your decrypted text is {decrypt()}"
+        return f"Your decrypted text is {decrypt(original_text, shift_amount)}"
     else:
         print("Your choice was invalid")
 
+result = caesar(direction, text, shift)
 
-print(caesar())
-print(encrypt())
-print(decrypt())
+print(result)
+# print(encrypt())
+# print(decrypt())
 #print(f"Your encrypted text is {encrypt()}")
 #print(f"Your decrypted text is {decrypt()}")
 
