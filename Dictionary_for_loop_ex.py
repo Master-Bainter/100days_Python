@@ -1,6 +1,7 @@
 # Code below this line
 
-
+#Dictionary
+#key:str(name), value:int(score)
 student_scores = {
     'Harry': 88,
     'Ron': 78,
@@ -9,6 +10,7 @@ student_scores = {
     'Neville': 60,
 }
 
+#empty dictionary
 student_grades = {}
 
 
